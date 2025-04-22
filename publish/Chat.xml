@@ -1,0 +1,114 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Chat</name>
+    </assembly>
+    <members>
+        <member name="M:Chat.ChatHub.SendUser(System.String,System.String)">
+            <summary>
+            Отправка личного сообщения
+            </summary>
+        </member>
+        <member name="M:Chat.ChatHub.SendGroup(System.String,System.Guid)">
+            <summary>
+            Отправка сообщения в группу
+            </summary>
+        </member>
+        <member name="M:Chat.ChatHub.AddUserToGroup(System.Guid,System.String)">
+            <summary>
+            Присоединение пользователя к группе
+            </summary>
+        </member>
+        <member name="M:Chat.ChatHub.RemoveUserFromGroup(System.Guid,System.String)">
+            <summary>
+            Удаление пользователя из группы
+            </summary>
+        </member>
+        <member name="M:Chat.ChatHub.CreateGroup(System.String)">
+            <summary>
+            Назначить несколько админов
+            </summary>
+            <summary>
+            Создание группы
+            </summary>
+        </member>
+        <member name="M:Chat.ChatHub.OnConnectedAsync">
+            <summary>
+            Cобытие присоединения клиента к хабу
+            </summary>
+        </member>
+        <member name="M:Chat.ChatHub.OnDisconnectedAsync(System.Exception)">
+            <summary>
+            Cобытие отключения клиента от хаба
+            </summary>
+        </member>
+        <member name="M:Chat.Controllers.AuthController.Login(Chat.Domain.Models.UserModels.LoginModel)">
+            <summary>
+            Вход в систему
+            </summary>
+        </member>
+        <member name="M:Chat.Controllers.AuthController.RefreshToken(Chat.Domain.Models.UserModels.TokenModel)">
+            <summary>
+            Получение RefreshToken-а
+            </summary>
+        </member>
+        <member name="M:Chat.Controllers.UserController.Registration">
+            <summary>
+            Тестовое добавление пользователей 
+            </summary>
+        </member>
+        <member name="M:Chat.Controllers.UserController.Registration(Chat.Domain.Models.UserModels.RegisterModel)">
+            <summary>
+            Регистрация пользователя 
+            </summary>
+        </member>
+        <member name="M:Chat.Controllers.UserController.SendConfirmation(Chat.Domain.Models.UserModels.SendConfirmationModel)">
+            <summary>
+            Отправка подтверждения на Email
+            </summary>
+            <remarks>
+            TokenType: 1 - Password, 2 - Email
+            </remarks>
+        </member>
+        <member name="M:Chat.Controllers.UserController.EmailConfirm(Chat.Domain.Models.UserModels.ConfirmModel)">
+            <summary>
+            Подтверждение регистрации (confirm email)
+            </summary>
+        </member>
+        <member name="M:Chat.Controllers.UserController.ResetPassword(Chat.Domain.Models.UserModels.GenerateTokenResetPasswordModel)">
+            <summary>
+            Генерация токена для восстановления пароля
+            </summary>
+        </member>
+        <member name="M:Chat.Controllers.UserController.ResetPasswordConfirm(Chat.Domain.Models.UserModels.ConfirmModel)">
+            <summary>
+            Подтверждение восстановления пароля (confirm reset password)
+            </summary>
+        </member>
+        <member name="M:Chat.Controllers.UserController.Users(System.String)">
+            <summary>
+            Получение списка пользователей с фильтром по имени
+            </summary>
+        </member>
+        <member name="M:Chat.Controllers.UserController.Groups">
+            <summary>
+            Получить список групп, в которые входит пользователь
+            </summary>
+        </member>
+        <member name="M:Chat.Controllers.UserController.ChatHistoryMessages(System.String)">
+            <summary>
+            Получение списка сообщений личного чата
+            </summary>
+        </member>
+        <member name="M:Chat.Controllers.UserController.GroupHistoryMessages(System.Guid)">
+            <summary>
+            Получение списка сообщений чата группы
+            </summary>
+        </member>
+        <member name="T:Chat.Jobs.ClearTokensJob">
+            <summary>
+            Очистка истёкших токенов
+            </summary>
+        </member>
+    </members>
+</doc>
