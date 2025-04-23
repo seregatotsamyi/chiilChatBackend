@@ -52,7 +52,7 @@
             Получение RefreshToken-а
             </summary>
         </member>
-        <member name="M:Chat.Controllers.UserController.Registration">
+        <member name="M:Chat.Controllers.UserController.TestAdd">
             <summary>
             Тестовое добавление пользователей 
             </summary>
