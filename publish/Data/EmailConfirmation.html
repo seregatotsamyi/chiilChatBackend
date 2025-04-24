@@ -1,0 +1,99 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Подтверждение регистрации в ChillChat</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f9f9f9;
+        }
+
+        .header {
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        .logo {
+            max-width: 150px;
+            height: auto;
+        }
+
+        .content {
+            background-color: #fff;
+            border-radius: 10px;
+            padding: 30px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            color: #4a6baf;
+            font-size: 24px;
+            margin-top: 0;
+        }
+
+        .button {
+            display: inline-block;
+            background-color: #4a6baf;
+            color: white !important;
+            text-decoration: none;
+            padding: 12px 24px;
+            border-radius: 5px;
+            font-weight: bold;
+            margin: 20px 0;
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 30px;
+            font-size: 12px;
+            color: #777;
+        }
+
+        .highlight {
+            color: #4a6baf;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <!-- <div class="header">
+        Замените src на реальный URL логотипа ChillChat 
+        <img src="https://example.com/chillchat-logo.png" alt="ChillChat" class="logo">
+    </div> -->
+
+    <div class="content">
+        <h1>Добро пожаловать в ChillChat! 👋</h1>
+
+        <p>Администрация <span class="highlight">ChillChat</span> рада приветствовать вас в нашем уютном сообществе!</p>
+
+        <p>Для завершения регистрации и активации вашего аккаунта, пожалуйста, подтвердите ваш email:</p>
+
+        <div style="text-align: center;">
+            <a href="{{CONFIRMATION_LINK}}" class="button">Подтвердить Email</a>
+        </div>
+
+        <p>Если кнопка не работает, скопируйте и вставьте эту ссылку в браузер:</p>
+        <p style="word-break: break-all;"><a href="{{CONFIRMATION_LINK}}">{{CONFIRMATION_LINK}}</a></p>
+
+        <p>Ссылка действительна в течение <span class="highlight">5 часов</span>.</p>
+
+        <p>Если вы не регистрировались в ChillChat, просто проигнорируйте это письмо.</p>
+    </div>
+
+    <div class="footer">
+        <p>© 2023 ChillChat. Все права защищены.</p>
+        <p>Это письмо отправлено автоматически, пожалуйста, не отвечайте на него.</p>
+        <!-- <p>
+            <a href="{{PRIVACY_POLICY_LINK}}" style="color: #4a6baf; text-decoration: none;">Политика конфиденциальности</a> |
+            <a href="{{TERMS_LINK}}" style="color: #4a6baf; text-decoration: none;">Условия использования</a>
+        </p> -->
+    </div>
+</body>
+</html>

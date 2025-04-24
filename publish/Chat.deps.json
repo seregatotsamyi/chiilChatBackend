@@ -586,14 +586,7 @@
           "System.Composition.Runtime": "6.0.0"
         }
       },
-      "System.Formats.Asn1/8.0.1": {
-        "runtime": {
-          "lib/net8.0/System.Formats.Asn1.dll": {
-            "assemblyVersion": "8.0.0.0",
-            "fileVersion": "8.0.724.31311"
-          }
-        }
-      },
+      "System.Formats.Asn1/8.0.1": {},
       "System.IdentityModel.Tokens.Jwt/8.6.0": {
         "dependencies": {
           "Microsoft.IdentityModel.JsonWebTokens": "8.6.0",
@@ -635,7 +628,10 @@
           "System.IdentityModel.Tokens.Jwt": "8.6.0"
         },
         "runtime": {
-          "Chat.Core.dll": {}
+          "Chat.Core.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       },
       "Chat.Domain/1.0.0": {
@@ -643,7 +639,10 @@
           "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "8.0.13"
         },
         "runtime": {
-          "Chat.Domain.dll": {}
+          "Chat.Domain.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       },
       "Chat.Infrastructure/1.0.0": {
@@ -655,7 +654,10 @@
           "Polly": "8.5.2"
         },
         "runtime": {
-          "Chat.Infrastructure.dll": {}
+          "Chat.Infrastructure.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       }
     }
