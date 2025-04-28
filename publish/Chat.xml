@@ -102,14 +102,9 @@
             Получить список всех пользователей и групп, в которые входит пользователь
             </summary>
         </member>
-        <member name="M:Chat.Controllers.UserController.ChatHistoryMessages(System.String)">
+        <member name="M:Chat.Controllers.UserController.Messages(System.Nullable{System.Guid},System.String,System.Nullable{System.Int32},System.Nullable{System.Int32})">
             <summary>
-            Получение списка сообщений личного чата
-            </summary>
-        </member>
-        <member name="M:Chat.Controllers.UserController.GroupHistoryMessages(System.Guid)">
-            <summary>
-            Получение списка сообщений чата группы
+            Получение списка сообщений из приватного чата или чата группы
             </summary>
         </member>
         <member name="T:Chat.Jobs.ClearTokensJob">
