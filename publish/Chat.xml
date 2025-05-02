@@ -97,7 +97,7 @@
             Информация о пользователе
             </summary>
         </member>
-        <member name="M:Chat.Controllers.UserController.UsersGroups(System.String)">
+        <member name="M:Chat.Controllers.UserController.UsersGroups(System.String,System.Nullable{System.Boolean})">
             <summary>
             Получить список всех пользователей и групп, в которые входит пользователь
             </summary>
