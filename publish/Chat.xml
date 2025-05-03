@@ -39,6 +39,11 @@
             Создание группы
             </summary>
         </member>
+        <member name="M:Chat.Controllers.MessageController.DeleteGroup(System.Guid)">
+            <summary>
+            Удаление группы
+            </summary>
+        </member>
         <member name="M:Chat.Controllers.UserController.TestAdd">
             <summary>
             Тестовое добавление пользователей 
