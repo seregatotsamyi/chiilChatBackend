@@ -97,7 +97,7 @@
             Получение потока пользовательского фото
             </summary>
         </member>
-        <member name="M:Chat.Controllers.UserController.UsersGroups">
+        <member name="M:Chat.Controllers.UserController.UserInfo">
             <summary>
             Информация о пользователе
             </summary>
@@ -105,6 +105,11 @@
         <member name="M:Chat.Controllers.UserController.UsersGroups(System.String,System.Nullable{System.Boolean})">
             <summary>
             Получить список всех пользователей и групп, в которые входит пользователь
+            </summary>
+        </member>
+        <member name="M:Chat.Controllers.UserController.GroupUsers(System.Guid)">
+            <summary>
+            Получить список всех пользователей группы
             </summary>
         </member>
         <member name="M:Chat.Controllers.UserController.Messages(System.Nullable{System.Guid},System.String,System.Nullable{System.Int32})">
