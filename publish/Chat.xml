@@ -14,7 +14,7 @@
             Получение RefreshToken-а
             </summary>
         </member>
-        <member name="M:Chat.Controllers.MessageController.SendToUser(Chat.Domain.Models.MessageModels.SendUserModel)">
+        <member name="M:Chat.Controllers.MessageController.SendToUser(Chat.Controllers.SendUserWithFilesModel)">
             <summary>
             Отправка личного сообщения
             </summary>
@@ -90,6 +90,11 @@
         <member name="M:Chat.Controllers.UserController.SetDefaultPhoto">
             <summary>
             Удаление фотографии и установка дефолтной на фронте
+            </summary>
+        </member>
+        <member name="M:Chat.Controllers.UserController.GetMessageFile(System.Guid)">
+            <summary>
+            Получение потока файла сообщения
             </summary>
         </member>
         <member name="M:Chat.Controllers.UserController.GetPhoto(System.Guid)">
